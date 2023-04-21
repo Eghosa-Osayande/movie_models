@@ -71,3 +71,14 @@ class StreamVideoInfoV2 with _$StreamVideoInfoV2 {
 
   factory StreamVideoInfoV2.fromJson(Map<String, dynamic> json) => _$StreamVideoInfoV2FromJson(json);
 }
+@freezed
+class StreamVideoInfoV3 with _$StreamVideoInfoV3 {
+  @JsonSerializable(explicitToJson: true)
+  factory StreamVideoInfoV3({
+    required String watchlink,
+    required String? subtitles,
+    Map<String,String>? headers,
+  }) = _StreamVideoInfoV3;
+
+  factory StreamVideoInfoV3.fromJson(Map<String, dynamic> json) => _$StreamVideoInfoV3FromJson(json);
+}

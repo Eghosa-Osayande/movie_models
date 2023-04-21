@@ -1258,3 +1258,189 @@ abstract class _StreamVideoInfoV2 implements StreamVideoInfoV2 {
   _$$_StreamVideoInfoV2CopyWith<_$_StreamVideoInfoV2> get copyWith =>
       throw _privateConstructorUsedError;
 }
+
+StreamVideoInfoV3 _$StreamVideoInfoV3FromJson(Map<String, dynamic> json) {
+  return _StreamVideoInfoV3.fromJson(json);
+}
+
+/// @nodoc
+mixin _$StreamVideoInfoV3 {
+  String get watchlink => throw _privateConstructorUsedError;
+  String? get subtitles => throw _privateConstructorUsedError;
+  Map<String, String>? get headers => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $StreamVideoInfoV3CopyWith<StreamVideoInfoV3> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $StreamVideoInfoV3CopyWith<$Res> {
+  factory $StreamVideoInfoV3CopyWith(
+          StreamVideoInfoV3 value, $Res Function(StreamVideoInfoV3) then) =
+      _$StreamVideoInfoV3CopyWithImpl<$Res>;
+  $Res call(
+      {String watchlink, String? subtitles, Map<String, String>? headers});
+}
+
+/// @nodoc
+class _$StreamVideoInfoV3CopyWithImpl<$Res>
+    implements $StreamVideoInfoV3CopyWith<$Res> {
+  _$StreamVideoInfoV3CopyWithImpl(this._value, this._then);
+
+  final StreamVideoInfoV3 _value;
+  // ignore: unused_field
+  final $Res Function(StreamVideoInfoV3) _then;
+
+  @override
+  $Res call({
+    Object? watchlink = freezed,
+    Object? subtitles = freezed,
+    Object? headers = freezed,
+  }) {
+    return _then(_value.copyWith(
+      watchlink: watchlink == freezed
+          ? _value.watchlink
+          : watchlink // ignore: cast_nullable_to_non_nullable
+              as String,
+      subtitles: subtitles == freezed
+          ? _value.subtitles
+          : subtitles // ignore: cast_nullable_to_non_nullable
+              as String?,
+      headers: headers == freezed
+          ? _value.headers
+          : headers // ignore: cast_nullable_to_non_nullable
+              as Map<String, String>?,
+    ));
+  }
+}
+
+/// @nodoc
+abstract class _$$_StreamVideoInfoV3CopyWith<$Res>
+    implements $StreamVideoInfoV3CopyWith<$Res> {
+  factory _$$_StreamVideoInfoV3CopyWith(_$_StreamVideoInfoV3 value,
+          $Res Function(_$_StreamVideoInfoV3) then) =
+      __$$_StreamVideoInfoV3CopyWithImpl<$Res>;
+  @override
+  $Res call(
+      {String watchlink, String? subtitles, Map<String, String>? headers});
+}
+
+/// @nodoc
+class __$$_StreamVideoInfoV3CopyWithImpl<$Res>
+    extends _$StreamVideoInfoV3CopyWithImpl<$Res>
+    implements _$$_StreamVideoInfoV3CopyWith<$Res> {
+  __$$_StreamVideoInfoV3CopyWithImpl(
+      _$_StreamVideoInfoV3 _value, $Res Function(_$_StreamVideoInfoV3) _then)
+      : super(_value, (v) => _then(v as _$_StreamVideoInfoV3));
+
+  @override
+  _$_StreamVideoInfoV3 get _value => super._value as _$_StreamVideoInfoV3;
+
+  @override
+  $Res call({
+    Object? watchlink = freezed,
+    Object? subtitles = freezed,
+    Object? headers = freezed,
+  }) {
+    return _then(_$_StreamVideoInfoV3(
+      watchlink: watchlink == freezed
+          ? _value.watchlink
+          : watchlink // ignore: cast_nullable_to_non_nullable
+              as String,
+      subtitles: subtitles == freezed
+          ? _value.subtitles
+          : subtitles // ignore: cast_nullable_to_non_nullable
+              as String?,
+      headers: headers == freezed
+          ? _value._headers
+          : headers // ignore: cast_nullable_to_non_nullable
+              as Map<String, String>?,
+    ));
+  }
+}
+
+/// @nodoc
+
+@JsonSerializable(explicitToJson: true)
+class _$_StreamVideoInfoV3 implements _StreamVideoInfoV3 {
+  _$_StreamVideoInfoV3(
+      {required this.watchlink,
+      required this.subtitles,
+      final Map<String, String>? headers})
+      : _headers = headers;
+
+  factory _$_StreamVideoInfoV3.fromJson(Map<String, dynamic> json) =>
+      _$$_StreamVideoInfoV3FromJson(json);
+
+  @override
+  final String watchlink;
+  @override
+  final String? subtitles;
+  final Map<String, String>? _headers;
+  @override
+  Map<String, String>? get headers {
+    final value = _headers;
+    if (value == null) return null;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableMapView(value);
+  }
+
+  @override
+  String toString() {
+    return 'StreamVideoInfoV3(watchlink: $watchlink, subtitles: $subtitles, headers: $headers)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_StreamVideoInfoV3 &&
+            const DeepCollectionEquality().equals(other.watchlink, watchlink) &&
+            const DeepCollectionEquality().equals(other.subtitles, subtitles) &&
+            const DeepCollectionEquality().equals(other._headers, _headers));
+  }
+
+  @JsonKey(ignore: true)
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(watchlink),
+      const DeepCollectionEquality().hash(subtitles),
+      const DeepCollectionEquality().hash(_headers));
+
+  @JsonKey(ignore: true)
+  @override
+  _$$_StreamVideoInfoV3CopyWith<_$_StreamVideoInfoV3> get copyWith =>
+      __$$_StreamVideoInfoV3CopyWithImpl<_$_StreamVideoInfoV3>(
+          this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_StreamVideoInfoV3ToJson(
+      this,
+    );
+  }
+}
+
+abstract class _StreamVideoInfoV3 implements StreamVideoInfoV3 {
+  factory _StreamVideoInfoV3(
+      {required final String watchlink,
+      required final String? subtitles,
+      final Map<String, String>? headers}) = _$_StreamVideoInfoV3;
+
+  factory _StreamVideoInfoV3.fromJson(Map<String, dynamic> json) =
+      _$_StreamVideoInfoV3.fromJson;
+
+  @override
+  String get watchlink;
+  @override
+  String? get subtitles;
+  @override
+  Map<String, String>? get headers;
+  @override
+  @JsonKey(ignore: true)
+  _$$_StreamVideoInfoV3CopyWith<_$_StreamVideoInfoV3> get copyWith =>
+      throw _privateConstructorUsedError;
+}

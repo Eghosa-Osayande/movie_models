@@ -113,3 +113,20 @@ Map<String, dynamic> _$$_StreamVideoInfoV2ToJson(
       'watchlink': instance.watchlink,
       'subtitles': instance.subtitles,
     };
+
+_$_StreamVideoInfoV3 _$$_StreamVideoInfoV3FromJson(Map<String, dynamic> json) =>
+    _$_StreamVideoInfoV3(
+      watchlink: json['watchlink'] as String,
+      subtitles: json['subtitles'] as String?,
+      headers: (json['headers'] as Map<String, dynamic>?)?.map(
+        (k, e) => MapEntry(k, e as String),
+      ),
+    );
+
+Map<String, dynamic> _$$_StreamVideoInfoV3ToJson(
+        _$_StreamVideoInfoV3 instance) =>
+    <String, dynamic>{
+      'watchlink': instance.watchlink,
+      'subtitles': instance.subtitles,
+      'headers': instance.headers,
+    };
