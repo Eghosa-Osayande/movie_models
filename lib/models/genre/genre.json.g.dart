@@ -26,4 +26,5 @@ const _$GenreTypeEnumMap = {
   GenreType.netTrendingSeries: 'netTrendingSeries',
   GenreType.netTrendingMovies: 'netTrendingMovies',
   GenreType.tag: 'tag',
+  GenreType.netKDrama: 'netKDrama',
 };
