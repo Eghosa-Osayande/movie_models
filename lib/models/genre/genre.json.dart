@@ -11,6 +11,7 @@ enum GenreType {
   netTrendingSeries,
   netTrendingMovies,
   tag,
+  netKDrama,
   // nkiriNewEpisodes,
   // nkiriNewMovies,
 }
